@@ -2,9 +2,16 @@
 
 ## 1. Build the application
 
-- Figure out which Vite command can build the application to production ready code and try it locally.
-- In which folder the build artifacts are found?
+- Figure out which Vite command can build the application to production ready code and try it locally. //dis
+- In which folder the build artifacts are found? // dis
 - How differs the built JS and HTML files from the source files?
+
+Minification: The built JavaScript and HTML files are usually minified, meaning whitespace and comments are removed, and variable names may be shortened to reduce file size.
+Bundling: Vite bundles multiple JavaScript files into fewer files, reducing the number of HTTP requests required to load the application.
+Transpilation: The source files written in modern JavaScript (ES6+) or TypeScript may be transpiled to a version compatible with older browsers.
+Optimized Assets: Any assets like images or stylesheets might be optimized, and their paths may be altered to reflect the build structure.
+Static Files: The built HTML files will reference the compiled JavaScript and CSS files, which are generated in the dist folder.
+
 - You can serve the production files with the `npm run preview` command.
 
 ## 2. Deploy the page to GitHub Pages
